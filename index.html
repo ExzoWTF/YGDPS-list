@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YGDPS_LIST</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/test.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-top">
+                <div class="brand">
+                    <h2 class="header-h2" id="header-txt">YGDPS</h2>
+                    <p class="header-p1" id="header-txt">Демон и челлендж лист &amp; топ игроков</p>
+                </div>
+ 
+                <div class="theme-switch" role="group" aria-label="Переключение темы">
+                    <button class="theme-btn" type="button" data-theme-btn="dark" aria-pressed="true" title="Тёмная тема">
+                        <span class="theme-dot theme-dot--dark"></span>Тёмная
+                    </button>
+                    <button class="theme-btn" type="button" data-theme-btn="light" aria-pressed="false" title="Светлая тема">
+                        <span class="theme-dot theme-dot--light"></span>Светлая
+                    </button>
+                    <button class="theme-btn" type="button" data-theme-btn="choco" aria-pressed="false" title="Молочно-шоколадная тема">
+                        <span class="theme-dot theme-dot--choco"></span>Шоколад
+                    </button>
+                </div>
+            </div>
+ 
+            <nav class="header-nav">
+                <ul class="header-ul">
+                    <li class="header-li"><a class="header-link is-active" id="link-1" href="#demonlist" data-target="demonlist">Демон лист</a></li>
+                    <li class="header-li"><a class="header-link" id="link-2" href="#challengelist" data-target="challengelist">Челлендж лист</a></li>
+                    <li class="header-li"><a class="header-link" id="link-3" href="#topplayers" data-target="topplayers">Топ слееров</a></li>
+                    <li class="header-li"><a class="header-link" id="link-4" href="#contacts" data-target="contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+ 
+        <main class="main_demonlist panel" id="demonlist">
+            <div class="main-container">
+                <ul class="main-ul">
+                    <li class="main-li"><span class="rank top-1"><i>1</i></span><span class="entry-name">Strange Dimensions</span><span class="small-txt">1000 points</span></li>
+                    <li class="main-li"><span class="rank top-2"><i>2</i></span><span class="entry-name">Final Stopadio</span><span class="small-txt">960 points</span></li>
+                    <li class="main-li"><span class="rank top-3"><i>3</i></span><span class="entry-name">The Burning Memory</span><span class="small-txt">920 points</span></li>
+                    <li class="main-li"><span class="rank top"><i>4</i></span><span class="entry-name entry-name--empty">-None-</span><span class="small-txt">0 points</span></li>
+                    <li class="main-li"><span class="rank top"><i>5</i></span><span class="entry-name entry-name--empty">-None-</span><span class="small-txt">0 points</span></li>
+                </ul>
+            </div>
+        </main>
+ 
+        <section class="challengelist panel" id="challengelist" hidden>
+            <div class="challenge">
+                <ul class="challenge-ul">
+                    <li class="challengetop"><span class="rank top-1"><i>1</i></span><span class="entry-name">trial and success</span><span class="small-txt">ID:128</span></li>
+                    <li class="challengetop"><span class="rank top-2"><i>2</i></span><span class="entry-name">ultra the what</span><span class="small-txt">ID:124</span></li>
+                    <li class="challengetop"><span class="rank top-3"><i>3</i></span><span class="entry-name">Sakupen wawelesss</span><span class="small-txt">ID:143</span></li>
+                    <li class="challengetop"><span class="rank top"><i>4</i></span><span class="entry-name">trial and error</span><span class="small-txt">ID:108</span></li>
+                    <li class="challengetop"><span class="rank top"><i>5</i></span><span class="entry-name">jump of mango</span><span class="small-txt">ID:140</span></li>
+                </ul>
+            </div>
+        </section>
+ 
+        <section class="topplayer panel" id="topplayers" hidden>
+            <div class="topplayer-container">
+                <ul class="topplayer-ul">
+                    <li class="topplayer-li"><span class="rank top"><i>1</i></span><span class="entry-name entry-name--empty">-None-</span></li>
+                    <li class="topplayer-li"><span class="rank top"><i>2</i></span><span class="entry-name entry-name--empty">-None-</span></li>
+                    <li class="topplayer-li"><span class="rank top"><i>3</i></span><span class="entry-name entry-name--empty">-None-</span></li>
+                    <li class="topplayer-li"><span class="rank top"><i>4</i></span><span class="entry-name entry-name--empty">-None-</span></li>
+                    <li class="topplayer-li"><span class="rank top"><i>5</i></span><span class="entry-name entry-name--empty">-None-</span></li>
+                </ul>
+            </div>
+        </section>
+ 
+        <section class="contacts panel" id="contacts" hidden>
+            <div class="contacts-container">
+                <ul class="contacts-ul">
+                    <li class="contact-li">
+                        <a class="contact-link" href="https://t.me/YGDPSS" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 240 240" width="22" height="22">
+                                    <path fill="currentColor" d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0Zm56.1 80.3-19.5 92.1c-1.5 6.6-5.4 8.2-10.9 5.1l-30.1-22.2-14.5 14c-1.6 1.6-3 3-6 3l2.2-31 56.5-51.1c2.5-2.2-.5-3.4-3.8-1.2L86 137.6l-30.3-9.5c-6.6-2-6.7-6.6 1.4-9.8l118.4-45.6c5.5-2 10.3 1.3 8.6 9.6Z"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-title">GDPS — YGDPS</span>
+                                <span class="contact-sub">Канал сервера в Telegram</span>
+                            </span>
+                            <span class="contact-handle">@YGDPSS</span>
+                        </a>
+                    </li>
+                    <li class="contact-li">
+                        <a class="contact-link" href="https://t.me/RAM_32gb" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 240 240" width="22" height="22">
+                                    <path fill="currentColor" d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0Zm56.1 80.3-19.5 92.1c-1.5 6.6-5.4 8.2-10.9 5.1l-30.1-22.2-14.5 14c-1.6 1.6-3 3-6 3l2.2-31 56.5-51.1c2.5-2.2-.5-3.4-3.8-1.2L86 137.6l-30.3-9.5c-6.6-2-6.7-6.6 1.4-9.8l118.4-45.6c5.5-2 10.3 1.3 8.6 9.6Z"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-title">Хост сайта</span>
+                                <span class="contact-sub">Вопросы по сайту и листу</span>
+                            </span>
+                            <span class="contact-handle">@RAM_32gb</span>
+                        </a>
+                    </li>
+                    <li class="contact-li">
+                        <a class="contact-link" href="https://t.me/Nekcikk" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 240 240" width="22" height="22">
+                                    <path fill="currentColor" d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0Zm56.1 80.3-19.5 92.1c-1.5 6.6-5.4 8.2-10.9 5.1l-30.1-22.2-14.5 14c-1.6 1.6-3 3-6 3l2.2-31 56.5-51.1c2.5-2.2-.5-3.4-3.8-1.2L86 137.6l-30.3-9.5c-6.6-2-6.7-6.6 1.4-9.8l118.4-45.6c5.5-2 10.3 1.3 8.6 9.6Z"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-title">Хост GDPS</span>
+                                <span class="contact-sub">Вопросы по серверу</span>
+                            </span>
+                            <span class="contact-handle">@Nekcikk</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+ 
+        <script src="Script.js"></script>
+    </body>
+</html>
+ 

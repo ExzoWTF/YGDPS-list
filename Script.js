@@ -1,8 +1,6 @@
 (() => {
   "use strict";
 
-  /* ---------- Переключение вкладок (демон лист / челлендж лист / топ игроков) ---------- */
-
   const links = document.querySelectorAll(".header-link[data-target]");
   const panels = document.querySelectorAll(".panel");
 
@@ -24,8 +22,6 @@
     });
   });
 
-  /* ---------- Переключение темы (тёмная / светлая / молочно-шоколадная) ---------- */
-
   const root = document.documentElement;
   const themeButtons = document.querySelectorAll("[data-theme-btn]");
   const STORAGE_KEY = "ygdps-theme";
@@ -41,7 +37,7 @@
     try {
       localStorage.setItem(STORAGE_KEY, theme);
     } catch (e) {
-      /* localStorage может быть недоступен — тема просто не сохранится */
+
     }
   }
 
@@ -53,7 +49,7 @@
   try {
     savedTheme = localStorage.getItem(STORAGE_KEY);
   } catch (e) {
-    /* игнорируем */
+
   }
 
   applyTheme(savedTheme || "dark");
